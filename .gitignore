@@ -1,0 +1,27 @@
+# Ambientes virtuais
+venv/
+.venv/
+
+# Credenciais
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Banco de dados local
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Arquivos temporários
+*.log
+.DS_Store
+
+# Ferramentas auxiliares de desenvolvimento
+.agents/
+.claude/
