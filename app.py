@@ -1,4 +1,3 @@
-
 import streamlit as st
 
 from datetime import datetime
@@ -14,7 +13,7 @@ from config.settings import APP_NAME, APP_VERSION
 
 st.set_page_config(
     page_title=APP_NAME,
-    page_icon="⚙️",
+    page_icon="🪶",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -213,7 +212,12 @@ def delete_active_conversation():
 
 with st.sidebar:
 
-    st.markdown("## ⚙️ TextForge AI")
+    # BANNER DA BARRA LATERAL
+    st.image(
+        "assets/sidebar-banner.png",
+        use_container_width=True
+    )
+
 
     st.caption(f"Versão {APP_VERSION}")
 
