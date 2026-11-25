@@ -65,7 +65,8 @@ textforge-ai/
 │
 ├── assets/
 │   ├── textforge-banner.png
-│   └── sidebar-banner.png
+│   ├── sidebar-banner.png
+│   └── textforge-icon.png
 │
 ├── config/
 │   ├── __init__.py
