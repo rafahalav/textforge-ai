@@ -401,17 +401,26 @@ with st.sidebar:
 # CABEÇALHO PRINCIPAL
 # ==================================================
 
-st.markdown(
-    '<div class="main-title">TextForge AI</div>',
-    unsafe_allow_html=True
-)
+col_icon, col_title = st.columns([0.11, 0.75], vertical_alignment="center")
 
-st.markdown(
-    '<div class="subtitle">'
-    'Seu laboratório pessoal de inteligência artificial generativa.'
-    '</div>',
-    unsafe_allow_html=True
-)
+with col_icon:
+    st.image(
+        "assets/textforge-icon.png",
+        width=95
+    )
+
+with col_title:
+    st.markdown(
+        '<div class="main-title">TextForge AI</div>',
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        '<div class="subtitle">'
+        'Seu laboratório pessoal de inteligência artificial generativa.'
+        '</div>',
+        unsafe_allow_html=True
+    )
 
 st.divider()
 
